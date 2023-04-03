@@ -4,21 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>style 속성 사용</title>
-    <script>
-
-    </script>
+    <title>함수</title>
 </head>
 <body>
-    <h1 onclick="changeText()" id="choice">Click on this text</h1>
-
+    <h1 id="switch" onclick="changeText()">Click on this Text!!</h1>
     <script>
-        //function 함수이름(){}
         function changeText(){
-            let h = document.getElementById("choice");
-            h.style.color = "blue";
-            h.style.fontFamily = "Arial";
-            h.style.fontStyle = "italic";
+        //document.getElementById("switch").innerHTML = "Good!"
+        document.getElementById("switch").style.color = "blue";
         }
     </script>
 </body>

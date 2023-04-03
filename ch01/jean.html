@@ -4,24 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>청바지 구매</title>
+    <title>Document</title>
     <script>
-        //청바지를 1개 구매후 추가로 1개 더 구매하고
-        //'구매 완료' 출력
-        var jean = 0;
+        //정수형 변수 선언
+        let jean = 0;
     
-        //1개 구매
-        jean = jean + 1;
-
-        //1개 추가 구매
-        // jean = jean + 1;
-        // jean++;
-        jean += 1; 
-
+        //연산 : 변수의 오른쪽에서 먼저 계산후 왼쪽에 대입함
+        //'='은 대입연산자
+        jean = jean + 1;  //1 = 0 + 1
+        jean = jean + 1;  //2 = 1 + 1
+    
         //출력
-        console.log(jean);
-        document.write("구매완료!!");
-    </script>
+        document.write(jean + "<br>")
+        document.write("구매완료!!")
+      </script>
 </head>
 <body>
     
