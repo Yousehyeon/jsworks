@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 추첨</title>
+</head>
+<body>
+    <section>
+        <h1>식권</h1>
+    </section>
+
+    <script>
+        let name = ('야미')
+        let people = new Array(3); //로또 배열 생성
+       
+        //랜덤 번호 추첨
+        document.write("<p>이름 : ");
+        for(let i = 0; i < people.length; i++){
+            let num = Math.floor(Math.random() * name.length); //랜덤 번호
+            people[i] = num;      //로또 배열에 저장
+            console.log(people);
+
+            //중복 제거
+            for(let j = 0; j < i; j++){
+                if(people[j] == people[i]){
+                    console.log("중복 번호 : " + people[i])
+                    i--;  //중복된 인덱스 삭제함
+                }
+            }
+        }
+
+        //출력
+        for(let i = 0; i < people.length; i++){
+            if(i == people.length[1])
+            document.write(name[people[i]]+ "");
+        
+        else{
+            document.write(people[i] + ", ")
+        }
+    }
+        document.write("</p>");
+    </script>
+</body>
+</html>
