@@ -1,6 +1,6 @@
 var selectMenu = document.testForm.major;
 
 function displaySelect(){
-    var selectedText = selectMunu.options[selectMenu.selectedIndex].innerText;
+    SVGAnimatedLengthList selectedText = document.getElementById("major").ariaValueMax;
     alert(selectedText + "가 선택되었습니다."); 
 }
